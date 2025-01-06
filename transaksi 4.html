@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Transaksi</title>
+    <link rel="stylesheet" href="transaksi.css">
+</head>
+<body>
+    <div class="container-transaksi">
+    <h1>Transaksi</h1>
+     <div class="cover-book">
+    <img src="buku 4.jpeg">
+    </div>
+    <p class="judul-buku">My Jasper June</p>
+        <form id="transactionForm">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name">
+            <div class="error" id="nameError"></div>
+
+            <label for="title">Judul Buku</label>
+            <input type="text" id="title" name="title">
+            <div class="error" id="titleError"></div>
+
+            <label for="category">Jenis Transaksi</label>
+            <select id="category" name="category">
+                <option value="">Pilih Jenis Transaksi </option>
+                <option value="Peminjaman">Peminjaman</option>
+                <option value="Pengambilan">Pengambilan</option>
+                <option value="Denda">Denda</option>
+            </select>
+            <div class="error" id="categoryError"></div>
+
+            <label for="date">Tanggal</label>
+            <input type="date" id="date" name="date">
+            <div class="error" id="dateError"></div>
+
+            <button type="button" onclick="saveTransaction()">Simpan</button>
+        </form>
+        <div class="link">
+            <a href="daftar-transaksi.html">Daftar Transaksi</a>
+        </div>
+    </div>
+
+    <script>
+        function saveTransaction() {
+            let isValid = true;
+
+            // Ambil elemen input
+            const name = document.getElementById("name");
+            const title = document.getElementById("title");
+            const category = document.getElementById("category");
+            const date = document.getElementById("date");
+
+            // Ambil elemen error
+            const nameError = document.getElementById("nameError");
+            const titleError = document.getElementById("titleError");
+            const categoryError = document.getElementById("categoryError");
+            const dateError = document.getElementById("dateError");
+
+            // Reset error messages
+            nameError.textContent = "";
+            titleError.textContent = "";
+            categoryError.textContent = "";
+            dateError.textContent = "";
+
+            // Validasi input
+            if (name.value.trim() === "") {
+                nameError.textContent = "Nama harus diisi.";
+                isValid = false;
+            }
+
+            if (title.value.trim() === "") {
+                titleError.textContent = "Judul buku harus diisi.";
+                isValid = false;
+            }
+
+            if (category.value === "") {
+                categoryError.textContent = "Jenis transaksi harus dipilih.";
+                isValid = false;
+            }
+
+            if (date.value === "") {
+                dateError.textContent = "Tanggal harus diisi.";
+                isValid = false;
+            }
+
+            // simpan ke localStorage
+            if (isValid) {
+                const transaction = {
+                    name: name.value,
+                    title: title.value,
+                    category: category.value,
+                    date: date.value
+                };
+
+                let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
+                transactions.push(transaction);
+                localStorage.setItem("transactions", JSON.stringify(transactions));
+
+                alert("Transaksi berhasil disimpan!");
+                document.getElementById("transactionForm").reset();
+            }
+        }
+    </script>
+</body>
+</html>

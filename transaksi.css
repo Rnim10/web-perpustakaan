@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    background:  url(bgtransaksi.jpeg) fixed;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 200vh;
+}
+.form-group {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+       
+input, select, button {
+    width: 100%;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 17px;
+
+}
+select{
+    border-radius: 17px black;
+}
+        
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+.container-transaksi{
+    width :450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 1px 1px 1px 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    max-width: 550px;
+    box-shadow: 2px 2px 20px 2px;
+    position: absolute;
+    align-items: center;
+}
+button{
+    background-color: rgb(18, 168, 43);
+    border: none;
+    box-shadow: 2px 5px 20px 5px black;
+    color: white;
+}
+.link-daftar{
+    padding-top: 15px;
+    text-align: center;
+}
+.link-daftar a {
+    text-decoration: none;
+    color: rgb(31, 19, 201);
+    border-radius: 14px;
+    font-size: 16px;
+}
+.link-daftar a:hover{
+    color: rgb(17, 132, 240);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-decoration: underline;
+    
+}
+button{
+    margin-top: 19px;
+    margin-bottom: 19px
+}
+button:hover{
+    background-color: rgba(16, 175, 16, 0.603);
+}
+label{
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 1px;
+
+}
+.cover-book{
+    width: 200px;
+}
+img{
+    width: 120px;
+    border-radius: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 165px;
+
+}
+.judul-buku{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+
+}
+input:hover{
+    background-color: rgba(194, 243, 162, 0.13);
+}

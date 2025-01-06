@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(247, 249, 252);
+    
+    
+}
+nav {
+    background-color: white;
+}
+.nav a{
+    color: rgb(226, 147, 0);
+    font-weight: 500;
+}
+.hero-center{
+    padding: 15% 0;
+    text-align: center;
+    margin: auto;
+    background: url(jonathan-francisca-BpbkLACP64M-unsplash.jpg);
+    background-size: cover;
+    
+
+}
+.hero-center .text-center{
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 70%;
+    font-size: 40px;
+    
+}
+.overlay{
+    width: 100%;
+    position: relative;
+    background: rgb(11, 11, 11, 0.8);
+}
+p{
+    color: rgb(255, 255, 255);
+    padding-top: 3%;
+    font-style: italic;
+}
+
+/*About Us*/
+.container{
+    justify-content: space-between;
+}
+.about{
+    padding: 10% 0;
+}
+.desc{
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 20px;
+    line-height: 180%;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 0 px;
+}
+.about-image{
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-size: cover;
+    padding-left: 0px;
+    background-image: url(WhatsApp\ Image\ 2024-12-31\ at\ 20.21.32.jpeg);
+    border-radius: 200000px;
+    padding-top: 10px;
+    box-shadow: 7px 5px 10px 2px ;
+
+    
+}
+.about-desc{
+    padding-top: px ;
+}
+.about-desc h2{
+    padding-left: 20px;
+    font-weight: 700;
+
+}
+/*Visi Misi*/
+.visi-misi{
+    background-color: rgb(10, 29, 83);
+    padding: 30px;
+    padding-bottom: 20px;
+}
+.Visi{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.misi-huruf{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.misi ul{
+    list-style: square;
+    margin: 0;
+    padding: 0px 20px;
+}
+ul li{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+/*Footer*/
+.footer-bottom{
+    background-color: rgb(2, 4, 34);
+    margin-top: px;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
